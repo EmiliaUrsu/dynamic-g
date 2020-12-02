@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Gallery | Pseudo classes/elements</title>
+    <style>
+        body{
+            background-image: url(https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/pf-mu13-ake5847-ake-1-l.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=f8bc33c8595632a30cd43fc18115f683) ;
+            margin: 0;
+            background-size: auto;
+        }
+        .photos{
+            
+            text-align: center;
+        }
+        .title{
+            color: black;
+            text-align: center;
+            margin-bottom: 110px;
+            padding: 15px;
+            background-color: rgba(27, 155, 31, 0.3);
+            
+        }
+        img{
+            height: 300px;
+            width: 260px;
+            margin-left: -149px;
+            margin-right: -149px;
+            border: snow 7px ridge;
+            padding: 10px;
+            box-shadow: 0 0 17px 5px #333;
+            transition: 1.5s;
+        }
+        img:nth-child(5){
+            transform: translateX(160px) rotate(45deg);
+        }
+        img:nth-child(4){
+            transform: translateX(170px) rotate(25deg);
+        }
+        img:nth-child(3){
+            transform: translateX(-160px) rotate(5deg);
+        }
+        img:nth-child(2){
+            transform: translateY(-60px) rotate(-10deg);
+        }
+        img:nth-child(1){
+            transform: translateY(160px) rotate(-25deg);
+        }
+        img:target{
+            transform: rotate(0) scale(1);
+        }
+        img:hover {
+            transform: scale(2);
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 class="title">Picture gallery</h1>
+    <div class="photos">
+        <img src="https://i.picsum.photos/id/421/200/300.jpg?hmac=uS2eM0G0F1Jupud0-BfxxJpQ3_kL8LFMxr6EHhop69o" >
+        <img src="https://i.picsum.photos/id/621/200/300.jpg?hmac=GgxwZqdPsVQwlM2QhfHoLU8gZ7uo_PP6oD4KmIq-ino" >
+        <img src="https://i.picsum.photos/id/471/200/300.jpg?hmac=N_ZXTRU2OGQ7b_1b8Pz2X8e6Qyd84Q7xAqJ90bju2WU" >
+        <img src=" https://i.picsum.photos/id/426/200/300.jpg?hmac=ATVZT7wbjRxxBKYqLXE043ImnR_uNOkz00T9dWGYuow" >
+        <a href="#5th">
+         <img id="5th" src="https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm255-sasi-22-e.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=1da078a6c77cbdc7a97e69b52a566d80" ></a>
+    </div>
+</body>
+</html>
